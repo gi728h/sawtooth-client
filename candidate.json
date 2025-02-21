@@ -1,0 +1,45 @@
+{
+    "CandidateCount": 10,
+    "Candidates": [
+        {
+            "Id": 1,
+            "Name": "candidate1"
+        },
+        {
+            "Id": 2,
+            "Name": "candidate2"
+        },
+        {
+            "Id": 3,
+            "Name": "candidate3"
+        },
+        {
+            "Id": 4,
+            "Name": "candidate4"
+        },
+        {
+            "Id": 5,
+            "Name": "candidate5"
+        },
+        {
+            "Id": 6,
+            "Name": "candidate6"
+        },
+        {
+            "Id": 7,
+            "Name": "candidate7"
+        },
+        {
+            "Id": 8,
+            "Name": "candidate8"
+        },
+        {
+            "Id": 9,
+            "Name": "candidate9"
+        },
+        {
+            "Id": 10,
+            "Name": "candidate10"
+        }
+    ]
+}

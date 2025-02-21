@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: sawtooth-sdk
+Version: 1.2.5
+Summary: Sawtooth Python SDK
+Home-page: https://github.com/hyperledger/sawtooth-sdk-python
+Author: Hyperledger Sawtooth
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+License-File: NOTICES
+Requires-Dist: colorlog
+Requires-Dist: protobuf
+Requires-Dist: pyzmq
+Requires-Dist: secp256k1
+Requires-Dist: toml
+Requires-Dist: PyYAML
+
+UNKNOWN
+
