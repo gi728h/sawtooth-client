@@ -8,6 +8,10 @@ from sawtooth_sdk.protobuf.transaction_pb2 import TransactionHeader, Transaction
 from sawtooth_sdk.protobuf.batch_pb2 import BatchHeader, Batch, BatchList # type: ignore
 from sawtooth_signing import create_context # type: ignore
 from sawtooth_signing import CryptoFactory # type: ignore
+import os
+
+
+
 
 
 class TransactionHandler:
@@ -70,7 +74,7 @@ class TransactionHandler:
         self._encode_batch()
         try:
             request = urllib.request.Request(
-                'http://localhost:8008/batches',
+                f'http://{os.getenv("NODE_IP")}:8008/batches',
                 self.batch_list_bytes,
                 method='POST',
                 headers={'Content-Type': 'application/octet-stream'}

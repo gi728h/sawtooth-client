@@ -3,6 +3,7 @@ import hashlib
 import requests # type: ignore
 import base64
 import cbor # type: ignore
+import os
 
 def _sha512(data):
     return hashlib.sha512(data).hexdigest()
@@ -16,7 +17,7 @@ def _get_address(name):
     return prefix + game_address
 
 def _fetch_state(address):
-    r = requests.get(f"http://localhost:8008/state/{address}")
+    r = requests.get(f"http://{os.getenv("NODE_IP")}:8008/state/{address}")
     return r.json()
 
 def _get_value(name):
